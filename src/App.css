@@ -1,0 +1,62 @@
+body,
+#root,
+.App {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.react-responsive-modal-modal {
+    padding: 10px 10px 16px 10px !important;
+    border-radius: 10px;
+}
+
+.react-responsive-modal-closeButton {
+    top: 8px !important;
+    right: 8px !important;
+    border-radius: 4px;
+}
+
+.react-responsive-modal-closeButton:hover {
+    background: rgba(183, 28, 28, 0.5);
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.disp-style-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.disp-style-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.avatar-lg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.avatar-sm {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}

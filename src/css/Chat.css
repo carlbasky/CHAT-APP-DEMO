@@ -1,0 +1,91 @@
+.chat-bubble-sender p,
+.chat-bubble-receiver p,
+.chat-bubble-time-receiver p,
+.chat-bubble-time-sender p {
+    margin: 0px;
+}
+
+.chat-area {
+    background-color: #ECEFF1;
+    padding: 2px 12px;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chat-bubble-container {
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 4px 0px;
+}
+
+.chat-bubble-sender,
+.chat-bubble-receiver {
+    border-radius: 10px;
+    padding: 4px 10px 4px 10px;
+    width: fit-content;
+    max-width: 45%;
+    font-size: 18px;
+}
+
+.chat-bubble-sender {
+    background-color: #C8E6C9;
+    margin-left: auto;
+    text-align: right;
+}
+
+.chat-bubble-receiver {
+    background-color: #B3E5FC;
+}
+
+.chat-bubble-time-receiver,
+.chat-bubble-time-sender {
+    font-size: 9px;
+    color: #424242;
+}
+
+.chat-bubble-time-receiver {
+    text-align: left;
+}
+
+.chat-bubble-time-sender {
+    text-align: right;
+}
+
+.borderless-textbox {
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+.chat-count-indicator {
+    border-radius: 50%;
+    background-color: #D50000;
+    max-width: 28px;
+    max-height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    margin-left: auto;
+    padding: 2px;
+    color: #fafafa;
+    text-align: center;
+    vertical-align: middle;
+    animation: chat-count-indicator 1s infinite;
+    /* add the property you want to animate */
+    background-color: #D50000;
+}
+
+@keyframes chat-count-indicator {
+    0% {
+        background-color: #FFEBEE;
+        color: #212121;
+    }
+    75% {
+        background-color: #E53935;
+    }
+    100% {
+        background-color: #D50000;
+        color: #fafafa;
+    }
+}
